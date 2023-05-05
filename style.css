@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(151,62,224) ;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(151,62,224);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+.main h1{
+    font-size: 54px;
+    color:white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+.main h2{
+    display: inline-block;
+    background: rgb(224, 234, 243);
+    border-radius: 20px;
+    padding: 12px 5px ;
+    margin: 6px;
+
+}
+button{
+    margin: 6px;
+    width: 12rem;
+    padding: 12px 5px ;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(209,111,255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square{
+    width: 180px;
+    height: 160px;
+    box-shadow: 1px 3px 5px black;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.mole{
+    background: url(./mole.png);
+    background-size: cover;
+}
+
+
+/* Media Queries  */
+@media screen and (max-width: 47.95em){
+    .square{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 384px){
+   .main h1{
+       font-size: 2.5rem;
+   }
+   .main h2{
+    font-size: 1.2rem;
+   }
+   
+   .square{
+    width: 90px;
+    height: 80px;
+   }
+    
+}
